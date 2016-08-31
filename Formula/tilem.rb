@@ -1,13 +1,11 @@
-
 class Tilem < Formula
   desc "ti calculator emulator"
   homepage "http://lpg.ticalc.org/prj_tilem/"
   url "https://downloads.sourceforge.net/project/tilem/tilem/2.0/tilem-2.0.tar.bz2?r=http%3A%2F%2Flpg.ticalc.org%2Fprj_tilem%2Fdownload.html"
   version "2.0"
   sha256 "fc27235a402dfbee35a15a5aa7c9603211ffa5a1f8b1716310ce8f0b7f4743ad"
-  head "https://tilem.svn.sourceforge.net/svnroot/tilem/trunk" 
-
-  depends_on :x11 
+  head "https://tilem.svn.sourceforge.net/svnroot/tilem/trunk"
+  depends_on :x11
   depends_on "gtk+"
   depends_on "pkg-config" => :build
   depends_on "autoconf" => :build
@@ -17,18 +15,14 @@ class Tilem < Formula
   depends_on "jfmherokiller/tap/libticables"
   depends_on "jfmherokiller/tap/libticalcs"
   depends_on "jfmherokiller/tap/libtifiles"
-
   def install
-
     system "./configure", "--disable-debug",
                           "--disable-dependency-tracking",
                           "--disable-silent-rules",
                           "--prefix=#{prefix}"
     system "make", "install"
   end
-
   test do
-
     system "#{bin}/tilem2","--help"
   end
 end
