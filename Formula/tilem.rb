@@ -23,6 +23,6 @@ class Tilem < Formula
     system "make", "install"
   end
   test do
-    system "#{bin}/tilem2","--help"
+    system "#{bin}/tilem2", "--help"
   end
 end
