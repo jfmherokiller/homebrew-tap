@@ -1,11 +1,11 @@
 
 class Tilem < Formula
-  desc "Tilem ti calculator emulator"
+  desc "ti calculator emulator"
   homepage "http://lpg.ticalc.org/prj_tilem/"
   url "https://downloads.sourceforge.net/project/tilem/tilem/2.0/tilem-2.0.tar.bz2?r=http%3A%2F%2Flpg.ticalc.org%2Fprj_tilem%2Fdownload.html"
   version "2.0"
   sha256 "fc27235a402dfbee35a15a5aa7c9603211ffa5a1f8b1716310ce8f0b7f4743ad"
-  head "https://tilem.svn.sourceforge.net/svnroot/tilem/trunk", :using => :svn 
+  head "https://tilem.svn.sourceforge.net/svnroot/tilem/trunk" 
 
   depends_on :x11 
   depends_on "gtk+"
@@ -29,6 +29,6 @@ class Tilem < Formula
 
   test do
 
-    system "#{bin}/tilem2 --help"
+    system "#{bin}/tilem2","--help"
   end
 end
