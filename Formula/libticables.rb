@@ -3,7 +3,7 @@ class Libticables < Formula
   homepage "https://github.com/debrouxl/tilibs/tree/master/libticables/trunk"
   url "https://github.com/debrouxl/tilibs/archive/master.zip"
   version "0.1"
-  sha256 "3c484085a79b73cd8cc6370ea54fc20afb93839b3f65ff2c6a9f08a2f604ac28"
+  sha256 ""
   
   depends_on "autoconf"
   depends_on "automake"
