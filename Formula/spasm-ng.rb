@@ -8,7 +8,6 @@ class SpasmNg < Formula
   url "https://github.com/alberthdev/spasm-ng/archive/v0.5-beta.2.tar.gz"
   head "https://github.com/alberthdev/spasm-ng.git"
   sha256 ""
-  version "2.0"
   # depends_on "cmake" => :build
   #depends_on :x11 # if your formula requires any X11/XQuartz components
   depends_on "openssl" => :recommended
