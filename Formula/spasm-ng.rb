@@ -11,7 +11,7 @@ class SpasmNg < Formula
   # depends_on "cmake" => :build
   #depends_on :x11 # if your formula requires any X11/XQuartz components
   depends_on "openssl" => :recommended
-
+  depends_on "gmp"
 
   def install
   args = %W[
